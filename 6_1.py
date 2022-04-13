@@ -1,7 +1,7 @@
 from time import sleep
 
 class TrafficLight:
-    __color = ['Красный', 'Желтый', 'Зеленый']
+    __color = ['red', 'yellow', 'green']
 
     def running(self):
         i = 0
@@ -11,10 +11,12 @@ class TrafficLight:
             if i == 0:
                 sleep(7)
             elif i == 1:
-                sleep(5)
+                sleep(2)
             elif i == 2:
-                sleep(3)
+                sleep(10)
             i += 1
 
 TrafficLight = TrafficLight()
 TrafficLight.running()
+
+
